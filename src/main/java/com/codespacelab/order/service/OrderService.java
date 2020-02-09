@@ -15,8 +15,8 @@ public class OrderService {
     private List<OrderDto> orders;
 
     public OrderService() {
-        OrderDto order1 = new OrderDto(123L, Arrays.asList("TV", "phone"), "Shipped");
-        OrderDto order2 = new OrderDto(456L, Arrays.asList("microwave", "toaster", "phone"), "Packaged");
+        OrderDto order1 = new OrderDto(123L, Arrays.asList("Burger", "Meal"), "Collected");
+        OrderDto order2 = new OrderDto(456L, Arrays.asList("Burger", "Meal", "Meal"), "Pick-up");
 
         orders = new ArrayList<>(Arrays.asList(order1, order2));
     }
