@@ -1,6 +1,8 @@
 spring:
   application:
     name: order
-
+  artemis:
+    user: artemis
+    password: simetraehcapa
 server:
   port: 8721
