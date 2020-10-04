@@ -2,6 +2,7 @@ package com.codespacelab.order.service;
 
 import com.codespacelab.order.config.JmsConfig;
 import lombok.RequiredArgsConstructor;
+import org.springframework.context.annotation.Profile;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
@@ -10,6 +11,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
+@Profile("jms")
 public class MenuService {
 
     private final JmsTemplate jmsTemplate;
