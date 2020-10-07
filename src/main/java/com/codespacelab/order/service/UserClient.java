@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 //@FeignClient("user")
-@FeignClient("zuul")
-@RibbonClient("user")
+ @FeignClient("zuul")
+ @RibbonClient("user")
 public interface UserClient {
 
     @RequestMapping(method = RequestMethod.GET, value = "/user/user/validate")
