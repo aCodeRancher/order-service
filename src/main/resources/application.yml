@@ -4,3 +4,8 @@ spring:
 
 server:
   port: 8721
+
+user:
+  service:
+     username : admin
+     password : admin
