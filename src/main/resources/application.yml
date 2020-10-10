@@ -1,11 +1,10 @@
 spring:
   application:
     name: order
-
+  security:
+    user:
+      name : admin
+      password: admin
 server:
   port: 8721
 
-user:
-  service:
-     username : admin
-     password : admin
